@@ -18,3 +18,10 @@ const media = total / (peso1 + peso2);
 console.log(media.toFixed(2));
 //toString(), transforma um número em string;
 console.log(media.toString());
+
+//para fazer uma exponenciação, por exemplo, é necessário usar o Math
+const raio = 5.6;
+const area = Math.PI * Math.pow(raio, 2);
+
+console.log(area);
+console.log(typeof Math);
