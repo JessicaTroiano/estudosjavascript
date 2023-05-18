@@ -14,18 +14,9 @@ const opcoes = {
 const vazioInicial = '.';
 
 const keys = Object.keys(opcoes);
-// console.log(keys.length)
 
 const sorteio = (key) => {
-  // const prob1 = 0.5; // 50% de chance de sorteio
-  // const prob2 = 0.25; // 25% de chance de sorteio
-  // const prob3 = 0.25; // 25% de chance de sorteio
   for(let i = keys.length -1; i > 0; i--){
-    //Math.floor()
-    //A função Math.floor(x) retorna o menor número inteiro dentre o número "x".
-  
-    //Math.random()
-    //A função Math.random() retorna um número pseudo-aleatório no intervalo [0, 1], ou seja, de 0 (inclusivo) até, mas não incluindo, 1 (exclusivo).
     const j = Math.floor(Math.random() * (i+1));
     [keys[i], keys[j]] = [keys[j], keys[i]]
     for(key of keys){
